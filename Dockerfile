@@ -18,9 +18,6 @@ RUN pip install --no-cache-dir \
     "fastapi==0.103.2" \
     "pydantic==1.10.13"
 
-
-RUN pip install --no-cache-dir xformers==0.0.23 --no-dependencies
-
 RUN curl -fsL -o /usr/local/lib/python3.10/dist-packages/gradio/frpc_linux_amd64_v0.2 \
     https://cdn-media.huggingface.co/frpc-gradio-0.2/frpc_linux_amd64 && \
     chmod +x /usr/local/lib/python3.10/dist-packages/gradio/frpc_linux_amd64_v0.2
